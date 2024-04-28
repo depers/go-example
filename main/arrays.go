@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
+/*
+*
+
+	数组
+*/
 func main() {
 	// 创建一个数组 a ，它将恰好容纳 5 个 int 。元素的类型和长度都是数组类型的一部分。默认情况下，数组为零值，这对于 int 意味着 0
 	var a [5]int
@@ -11,6 +16,7 @@ func main() {
 
 	// 可以使用 array[index] = value 语法在索引处设置一个值，并使用 array[index] 获取一个值。
 	a[4] = 100
+	a[4] = 101
 	fmt.Println("set:", a)
 	fmt.Println("get:", a[4])
 
@@ -24,6 +30,7 @@ func main() {
 	// 可以使用 ... 让编译器为您计算元素数量
 	b = [...]int{1, 2, 3, 4, 5}
 	fmt.Println("dcl:", b)
+	fmt.Println(b[0:2])
 
 	// 使用 : 指定索引，则其间的元素将被清零
 	b = [...]int{100, 3: 400, 500}

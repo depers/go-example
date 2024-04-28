@@ -5,6 +5,10 @@ import (
 	"slices"
 )
 
+/**
+  切片，比数组更好用
+*/
+
 func main() {
 
 	// 未初始化的切片等于 nil，长度为 0
@@ -19,6 +23,7 @@ func main() {
 	s[0] = "a"
 	s[1] = "b"
 	s[2] = "c"
+	s = append(s, "e") // 动态增加元素，超过了原有设定的长度
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
 
