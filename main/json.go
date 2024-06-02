@@ -6,6 +6,10 @@ import (
 	"os"
 )
 
+/*
+Go 提供对 JSON 编码和解码的内置支持，包括内置和自定义数据类型的传入和传出。
+*/
+
 type response1 struct {
 	Page   int
 	Fruits []string
@@ -39,7 +43,7 @@ func main() {
 	// 切片编码为json字符串
 	slcD := []string{"apple", "peach", "pear"}
 	slcB, _ := json.Marshal(slcD)
-	fmt.Println(slcB)
+	fmt.Println(string(slcB))
 
 	// map映射编码为json字符串
 	mapD := map[string]int{"apple": 5, "lettuce": 7}
