@@ -5,6 +5,9 @@ import (
 	"time"
 )
 
+/*
+时间
+*/
 func main() {
 	p := fmt.Println
 
